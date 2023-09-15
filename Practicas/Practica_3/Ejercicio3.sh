@@ -10,3 +10,14 @@ echo "Su apellido y nombre es:"
 echo "$apellido $nombre"
 echo "Su usuario es: `whoami`"
 echo "Su directorio actual es:"
+echo "`pwd`"
+echo "Su directorio personal es:"
+echo "$HOME"
+
+echo "Inserte ruta de la cual quiere saber el contenido:"
+read ruta
+ls -la $ruta
+
+echo "El espacio libre en disco es:"
+echo "`df -h`"
+
